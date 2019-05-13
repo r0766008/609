@@ -11,80 +11,69 @@
     <title>Over</title>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-light bg-white shadow p-3">
-    <a href="index.html" class="navbar-brand"><img src="images/logo.svg" alt="Logo van United Wearables" height="50px"></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
-            aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarText">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="geschiedenis.html">Geschiedenis</a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="over.html">Over</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="voorbeelden.html">Voorbeelden</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="weetjes.html">Weetjes</a>
-            </li>
-        </ul>
-        <span class="navbar-text">Het is dat United gevoel</span>
-    </div>
-</nav>
-
-<div class="container">
-    <div class="row mt-5 mb-5">
-        <div class="col-sm-5">
-            <img src="images/wearables-2316471_960_720.png" alt="error" class="img-fluid">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow p-3">
+        <a href="index.html" class="navbar-brand"><img src="images/logo.svg" alt="Logo van United Wearables" height="50px"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="geschiedenis.html">Geschiedenis</a>
+                    <div style="background-color: orange; height: 2px; display: none;"></div>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="over.html">Over</a>
+                    <div style="background-color: orange; height: 2px; display: block;"></div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="voorbeelden.html">Voorbeelden</a>
+                    <div style="background-color: orange; height: 2px; display: none;"></div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="weetjes.html">Weetjes</a>
+                    <div style="background-color: orange; height: 2px; display: none;"></div>
+                </li>
+            </ul>
+            <span class="navbar-text">Het is dat United gevoel</span>
         </div>
-        <div class="col">
-            <a>blue</a>
-        </div>
-    </div>
-</div>
+    </nav>
 
-<footer class="page-footer font-small teal pt-4" style="height: 50px;">
-    <div class="container-fluid text-center text-md-left">
-        <div class="row">
-            <div class="col-md-8 mt-md-0 mt-3">
-                <h5 class="text-uppercase font-weight-bold">Samenwerking van:</h5>
-                <p>Deze opdarcht is een eindproduct </p>
+    <div class="container">
+        <div class="row mt-5 mb-5">
+            <div class="col-sm-5">
+                <img src="images/wearables-2316471_960_720.png" alt="error" class="img-fluid">
             </div>
-            <hr class="clearfix w-100 d-md-none pb-3">
-            <div class="col-md-4 mb-md-0 mb-3">
-                <h5 class="text-uppercase font-weight-bold">Samenwerking van:</h5>
-                <p>Cody Volz <i class="fas fa-arrow-right"></i><a href="http://r0766008.sinners.be/"> Portfolio</a></p>
-                <p>Simon Duchateau <i class="fas fa-arrow-right"></i><a href="http://simon.sinners.be/"> Portfolio</a></p>
+            <div class="col">
+                <a>blue</a>
             </div>
         </div>
     </div>
-    <div class="footer-copyright text-center py-3 shadow p-3 darkest">© <a id="time"></a> Copyright:
-        <a href="https://www.thomasmore.be/"> ThomasMore.be</a>
-    </div>
-</footer>
 
-<script src="js/jquery.min.js"></script>
-<script src="js/bootstrap.bundle.min.js"></script>
-<!--custom scripts-->
-<script>
-    $(function () {
-        var vandaag = new Date();
-        $('#time').text(vandaag.getFullYear());
+    <footer class="page-footer font-small teal pt-4" style="height: 50px;">
+        <div class="container-fluid text-center text-md-left">
+            <div class="row">
+                <div class="col-md-8 mt-md-0 mt-3">
+                    <h5 class="text-uppercase font-weight-bold">Samenwerking van:</h5>
+                    <p>Deze opdarcht is een eindproduct </p>
+                </div>
+                <hr class="clearfix w-100 d-md-none pb-3">
+                <div class="col-md-4 mb-md-0 mb-3">
+                    <h5 class="text-uppercase font-weight-bold">Samenwerking van:</h5>
+                    <p>Cody Volz <i class="fas fa-arrow-right"></i><a href="http://r0766008.sinners.be/"> Portfolio</a></p>
+                    <p>Simon Duchateau <i class="fas fa-arrow-right"></i><a href="http://simon.sinners.be/"> Portfolio</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright text-center py-3 shadow p-3 darkest">© <a id="time"></a> Copyright:
+            <a href="https://www.thomasmore.be/"> ThomasMore.be</a>
+        </div>
+    </footer>
 
-        var grootte = $('li').css('font-size');
-        var hover_grootte = parseInt(grootte) + 5;
-        var na_hover = parseInt(hover_grootte) - 5;
-        console.warn(hover_grootte);
-        $('li').hover(function () {
-            $(this).css('font-size', hover_grootte + "px");
-        }, function () {
-            $(this).css('font-size', na_hover + "px");
-        });
-    });
-</script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!--custom scripts-->
+    <script src="js/Navbar.js"></script>
 </body>
 </html>
