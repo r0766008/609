@@ -2,11 +2,11 @@ $(function () {
     var vandaag = new Date();
     $('#time').text(vandaag.getFullYear());
 
-    var grootte = $('li').css('font-size');
+    var grootte = $('nav li').css('font-size');
     var hover_grootte = parseInt(grootte) + 3;
     var na_hover = parseInt(hover_grootte) - 3;
     console.warn(hover_grootte);
-    $('li').hover(function () {
+    $('nav li').hover(function () {
         $(this).css('font-size', hover_grootte + "px");
         if ($(this).attr("class") != "nav-item active") {
             $(this).children("div").css('display', "block");
