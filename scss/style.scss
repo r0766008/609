@@ -5,7 +5,8 @@ $theme-colors: (
 );
 // Link to BS4
 @import "../node_modules/bootstrap/scss/bootstrap";
-@import "menu";
-@import "carousel";
 
 // Custom code/partials
+@import "basis";
+@import "menu";
+@import "carousel";
