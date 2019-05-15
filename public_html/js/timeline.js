@@ -1,5 +1,4 @@
 (function(){
-    // Vertical Timeline - by CodyHouse.co
 	function VerticalTimeline( element ) {
 		this.element = element;
 		this.blocks = this.element.getElementsByClassName("js-cd-block");
@@ -10,7 +9,6 @@
 	};
 
 	VerticalTimeline.prototype.hideBlocks = function() {
-		//hide timeline blocks which are outside the viewport
 		if ( !"classList" in document.documentElement ) {
 			return;
 		}
@@ -33,7 +31,6 @@
 		for( var i = 0; i < this.blocks.length; i++) {
 			(function(i){
 				if( self.contents[i].classList.contains("cd-is-hidden") && self.blocks[i].getBoundingClientRect().top <= window.innerHeight*self.offset ) {
-					// add bounce-in animation
 					self.images[i].classList.add("cd-timeline__img--bounce-in");
 					self.contents[i].classList.add("cd-timeline__content--bounce-in");
 					self.images[i].classList.remove("cd-is-hidden");
@@ -52,8 +49,6 @@
 				verticalTimelinesArray.push(new VerticalTimeline(verticalTimelines[i]));
 			})(i);
 		}
-
-		//show timeline blocks on scrolling
 		window.addEventListener("scroll", function(event) {
 			if( !scrolling ) {
 				scrolling = true;

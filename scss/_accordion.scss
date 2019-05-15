@@ -1,0 +1,112 @@
+.card .card {
+  border: 0px;
+  background-color: rgba(0,0,0,0.3);
+}
+
+.card-header {
+  border: 0px;
+  background-color: #FFA500;
+}
+
+.card-header:hover {
+  background-color: darken(#FFA500, 10);
+}
+
+.card i {
+  background-color: white;
+  width: 70px;
+}
+
+.card a {
+  text-decoration: none;
+}
+
+.single-special {
+  padding: 30px 10px;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .single-special {
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .single-special {
+    padding: 30px 10px;
+  }
+}
+
+@-webkit-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    -ms-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+
+.single-icon > i {
+  font-size: 36px;
+  color: #fb397d;
+}
+
+.single-icon {
+  margin-bottom: 25px;
+}
+
+.single-special > h4 {
+  font-size: 22px;
+  color: #5b32b4;
+}
+
+.single-special > h4 {
+  font-size: 22px;
+  color: #5b32b4;
+  margin-bottom: 15px;
+}
+
+.single-special {
+  border: 1px solid #eff2f6;
+  padding: 40px;
+  border-radius: 40px 40px 40px 0px;
+  -webkit-transition-duration: 800ms;
+  -o-transition-duration: 800ms;
+  transition-duration: 800ms;
+  margin-bottom: 30px;
+}
+
+.single-special:hover {
+  -webkit-box-shadow: 0 10px 90px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 10px 90px rgba(0, 0, 0, 0.08);
+}
+
+.single-special p {
+  margin-bottom: 0;
+}
