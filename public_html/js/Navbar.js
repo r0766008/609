@@ -5,7 +5,6 @@ $(function () {
     var grootte = $('nav li').css('font-size');
     var hover_grootte = parseInt(grootte) + 3;
     var na_hover = parseInt(hover_grootte) - 3;
-    console.warn(hover_grootte);
     $('nav li').hover(function () {
         $(this).css('font-size', hover_grootte + "px");
         if ($(this).attr("class") != "nav-item active") {

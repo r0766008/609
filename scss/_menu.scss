@@ -1,5 +1,9 @@
-li > div {
+nav li > div {
   background-color: #FFA500;
   height: 2px;
   display: none;
+};
+
+nav li.active > div {
+  display: block;
 };
