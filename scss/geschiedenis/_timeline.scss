@@ -77,8 +77,8 @@ $marker-dist: $card-width + $outer-margin/2 - $marker-size/2;
 
 $counter: $items - $rows + 2;
 @for $i from 1 through $rows {
-  .demo-card:nth-child(#{$i*2-1})   { order: $i }
-  .demo-card:nth-child(#{$i*2})     { order: $counter }
+  .card-accordion:nth-child(#{$i*2-1})   { order: $i }
+  .card-accordion:nth-child(#{$i*2})     { order: $counter }
   $counter: $counter + 1;
 }
 
@@ -102,7 +102,7 @@ $counter: $items - $rows + 2;
     margin: auto;
     margin-bottom: 45px;
   }
-  .demo-card-wrapper {
+  .card-wrapper-accordion {
     position: relative;
     margin: auto;
     @include mq-lg {
@@ -125,7 +125,7 @@ $counter: $items - $rows + 2;
       }
     }
   }
-  .demo-card {
+  .card-accordion {
     position: relative;
     display: block;
     margin: 10px auto 80px;

@@ -10,11 +10,14 @@ $theme-colors: (
 @import "basis";
 @import "menu";
 
-//voorbeelden
-@import "voorbeeldenmenu";
-
 //geschiedenis
 @import "geschiedenis/timeline";
+
+//merken
+@import "merken/tabs";
+
+//voorbeelden
+@import "voorbeelden/voorbeeldenmenu";
 
 //weetjes
 @import "weetjes/accordion";
