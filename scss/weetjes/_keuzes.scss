@@ -1,0 +1,32 @@
+.single-special {
+  border: 1px solid #eff2f6;
+  padding: 40px;
+  border-radius: 40px 40px 40px 0px;
+  transition-duration: 800ms;
+  margin-bottom: 30px;
+  &:hover {
+    box-shadow: 0 10px 90px rgba(0, 0, 0, 0.08);
+  }
+}
+
+.single-special > h4 {
+  font-size: 22px;
+  color: #5b32b4;
+  margin-bottom: 15px;
+}
+
+.single-special p {
+  margin-bottom: 0;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .single-special {
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .single-special {
+    padding: 30px 10px;
+  }
+}

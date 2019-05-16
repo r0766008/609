@@ -9,6 +9,13 @@ $theme-colors: (
 // Custom code/partials
 @import "basis";
 @import "menu";
-@import "timeline";
-@import "accordion";
+
+//voorbeelden
 @import "voorbeeldenmenu";
+
+//geschiedenis
+@import "timeline";
+
+//weetjes
+@import "weetjes/accordion";
+@import "weetjes/keuzes";

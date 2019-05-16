@@ -154,25 +154,24 @@
   border-radius: 0.25em;
   padding: 1em;
   box-shadow: 0 3px 0 #d7e4ed;
-}
+  &:before {
+    /* triangle next to content block */
+    content: '';
+    position: absolute;
+    top: 16px;
+    right: 100%;
+    height: 0;
+    width: 0;
+    border: 7px solid transparent;
+    border-right: 7px solid #e9f0f5;
+  }
 
-.cd-timeline__content:after {
-  /* clearfix */
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.cd-timeline__content::before {
-  /* triangle next to content block */
-  content: '';
-  position: absolute;
-  top: 16px;
-  right: 100%;
-  height: 0;
-  width: 0;
-  border: 7px solid transparent;
-  border-right: 7px solid #e9f0f5;
+  &:after {
+    /* clearfix */
+    content: "";
+    display: table;
+    clear: both;
+  }
 }
 
 .cd-timeline__content h2 {
@@ -191,9 +190,6 @@
 
 .cd-timeline__date {
   display: inline-block;
-}
-
-.cd-timeline__date {
   float: left;
   padding: .8em 0;
 }
@@ -254,7 +250,6 @@
 }
 
 @media only screen and (min-width: 1170px) {
-  /* inverse bounce effect on even content blocks */
   .cd-timeline__block:nth-child(even) .cd-timeline__content.cd-timeline__content--bounce-in {
     animation: cd-bounce-2-inverse 0.6s;
   }
