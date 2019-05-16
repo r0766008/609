@@ -1,0 +1,65 @@
+//cody transform
+.number-box {
+  transform: rotate(5deg);
+}
+//cody transition
+.single-special {
+  transition-duration: 800ms;
+}
+//cody animation
+.card-timeline {
+  &:nth-child(odd) {
+    position: relative;
+    animation-name: left-cards;
+    animation-duration: 1s;
+  }
+  &:nth-child(even) {
+    position: relative;
+    animation-name: right-cards;
+    animation-duration: 1s;
+  }
+}
+
+@keyframes left-cards {
+  from {
+    left: -50px;
+  }
+  to {
+    left: 0px;
+  }
+}
+
+@keyframes right-cards {
+  from {
+    left: 50px;
+  }
+  to {
+    left: 0px;
+  }
+}
+
+
+//simon transform
+#voorbeelden h3 {
+  transform: rotate(10deg);
+}
+//simon transition
+#content section {
+  transition: transform 500ms, opacity 500ms;
+}
+
+//simon animation
+h1 {
+  animation-name: titles;
+  animation-duration: 1s;
+  position: relative;
+}
+
+@keyframes titles {
+  from {
+    top: -50px;
+  }
+  to {
+    top: 0px;
+  }
+}
